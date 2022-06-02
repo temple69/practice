@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label {
+        display: block;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        background-color: hsl(0, 0%, 90%);
+        height: 300px;
+        border-bottom: 2px solid black;
+    }
+    
+    section::before {
+        display: absolute;
+        content: 'Quiz on Important Facts';
+        width: 100%;
+        height: 40px;
+        background-color: red;
+        top: 70%;
+        color: white;
+        text-align: center;
+        background-color: #0e0e0e;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: .4em;
+        box-sizing: border-box;
+    }
+    
+    fieldset {
+        border: 0;
+        position: relative;
+        flex-direction: column;
+        padding-top: 1em;
+    }
+    
+    .controls {
+        display: flex;
+        margin-top: 1em;
+        gap: 1em;
+        padding-top: 2em;
+    }
+    
+    button {
+        height: 50px;
+        background-color: rgb(23, 141, 180);
+        outline: none;
+        border: none;
+        padding: 0 1.5em;
+        color: white;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <p>Which one of these is a Javascript package manager</p>
+
+            <fieldset>
+                <label>
+                    <input type="radio" name="package" id="node"> a: Node.js</label>
+                <label>
+                    <input type="radio" name="package" id="ts"> b:TypeScript
+                </label>
+                <label>
+                    <input type="radio" name="package" id="npm"> c:npm
+                </label>
+            </fieldset>
+            <div class="controls">
+                <button>Previous Question</button>
+                <button>Next Question</button>
+            </div>
+            <hr>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
